@@ -22,8 +22,8 @@ import java.util.Arrays;
     {
         return operand1 - operand2;
     }
-    public static int sumOfPrimes(n){
-	    int i, number, count, sum = 0
+    public static int sumOfPrimes(int n){
+	    int i, number, count, sum = 0;
 
 			for(number = 1; number <= 100; number++)
 			{
@@ -41,8 +41,18 @@ import java.util.Arrays;
 			    	sum = sum + number;
 			    }
 			}
-             System.out.println("\n The Sum of Prime Numbers from 1 to 100 = " + sum);
-             }
-             }
+             return sum;
+    }
+
+    public static int fib(int n){
+        if(n == 0){
+            return 0;
+        }
+        if(n == 1 || n == 2){
+            return 1;
+        }
+        return fib(n-2) + fib(n-1);
+    }
 
 }
+

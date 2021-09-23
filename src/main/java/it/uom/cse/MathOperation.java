@@ -3,7 +3,15 @@ package it.uom.cse;
 import java.util.Arrays;
 
 
-public class MathOperation {
+    public class MathOperation {
+
+    public static int sumOfIntegers(int n){
+        int sum=0;
+        for (int i =0; i<n+1; i++){
+            sum+=i;
+        };
+        return sum;
+    };
 
     public static double add(double... operands)
     {

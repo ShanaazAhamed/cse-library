@@ -16,6 +16,7 @@ public class MathOperation {
     }
 
     public static int fib(int n){
+        
         f = 1;
         for (int i= 2;i<n+1;i++){
             f+=i;
